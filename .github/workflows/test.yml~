@@ -1,3 +1,6 @@
+name: action
+on:
+  - push
 jobs:
   setup:
     runs-on: ubuntu-latest
