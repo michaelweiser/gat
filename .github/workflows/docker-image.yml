@@ -18,3 +18,14 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag my-image-name:$(date +%s)
         echo huhu
+
+  build-anders:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: |
+        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        echo huhu
